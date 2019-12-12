@@ -32,7 +32,7 @@ for(t in 1:(days-1)){
   }
 }
 
-simEvents<-data.frame(time=1:length(N), Drug_sensitive_cells=N, "Drug_resistant_cells"=M)
+simEvents<-data.frame(time=1:length(N), Drug_sensitive_cells=N, Drug_resistant_cells=M)
 test_data_long <- melt(simEvents, id="time")
 print(test_data_long)
 ggplot(data=test_data_long, aes(x=time, y=value, colour=variable))+
