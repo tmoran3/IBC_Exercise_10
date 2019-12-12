@@ -1,8 +1,8 @@
 
 library(ggplot2)
 library(reshape2)
-# N is the non-mutant shown in blue
-# M is the mutant shown in red
+# N is the non-mutant shown in red labeled drug sensitive
+# M is the mutant shown in blue labeled drug resistant
 
 
 days=500
